@@ -1,0 +1,9 @@
+body {
+    font-family: Trebuchet MS;
+}
+.hidden {
+    display: none;
+}
+.input-error {
+    border: 2px solid red;
+}

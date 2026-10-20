@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TimeChecker</title>
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>TimeChecker</h1>
+    <nav>
+      <a href="index.html">Lisää</a>
+      <a href="yhteenveto.html">Yhteenveto</a>
+    </nav>
+
+    <section>
+      <h2>Lisää aikaa</h2>
+      <form id="timeForm" novalidate>
+       <label>Minuutit</label> 
+       <input type="number" placeholder="15 min" min="0" max="59" id="minInput" />
+        <label>Tunnit</label>
+        <input type="number" placeholder="1 h" min="0" id="hourInput" />
+        <button type="button" id="addButton">+</button>
+        <span id="timeError"></span>
+        
+
+        <div id="category" class="hidden">
+          <p>Valitse tyypii</p>
+          <label><input type="radio" name="category" value="Työ" checked />
+            Työ</label>
+          <label><input type="radio" name="category" value="Opiskelu" />
+            Opiskelu</label>
+          <label><input type="radio" name="category" value="Urheilu" />
+            Urheilu</label>
+          <label><input type="radio" name="category" value="Hobby" /> Hobby</label>
+          <label><input type="radio" name="category" value="Muu" /> Muu</label>
+          <button type="submit">Tallenna</button>
+        </div>
+      </form>
+      <ul id="resultList"></ul>
+    </section>
+  </body>
+</html>
+
