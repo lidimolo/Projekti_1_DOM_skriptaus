@@ -46,6 +46,7 @@ function showEntry(entry) {
     const item = document.createElement("li");
     item.textContent = entry.category + " " + timeText + " ";
     const deleteButton = document.createElement("button");
+    deleteButton.classList.add("deleteButton");
     deleteButton.textContent = "Poista";
     deleteButton.addEventListener("click", function() {
         entries = entries.filter(function(savedEntry){
