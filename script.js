@@ -1,3 +1,4 @@
+// Haetaan tarvittavat HTML
 const addButton = document.querySelector ("#addButton");
 const category = document.querySelector("#category");
 const minInput = document.querySelector("#minInput");
@@ -10,51 +11,67 @@ console.log(hourInput);
 
 addButton.addEventListener ("click", function() {
     
+    //Muutettaan käyttäjän syöttämät arvot numeroksi
     const minutes = Number(minInput.value);
     const hours = Number(hourInput.value);
 
     console.log(minutes);
     console.log(hours);
+    // Lasketaan koknaisaika minuutteina
     const timeTotal = hours * 60 + minutes;
     console.log (timeTotal);
+    //Tarkistetaan, että syötetty aika on oikein
     if (hours<0 || minutes <0 || minutes>59 || timeTotal===0) {
+        //Näytetään virheilmoitus
         timeError.textContent = "Syötä aika oikein";
-       minInput.classList.add("input-error");
-       hourInput.classList.add("input-error");
+        minInput.classList.add("input-error");
+        hourInput.classList.add("input-error");
         return;
     }
-
+    // Poistetaan virheilmoitus 
     timeError.textContent="";
     minInput.classList.remove("input-error");
     hourInput.classList.remove("input-error")
+    // Näytetään kategorian valinta
     category.classList.remove("hidden");
 })
-
+// Haetaan lomake  ja lista
 const timeForm = document.querySelector ("#timeForm");
 const resultList = document.querySelector ("#resultList");
+// Haetaan aiemmin tallennetut tiedot LocalStoragesta
 let entries = JSON.parse(localStorage.getItem("timeEntries")) || [];
 console.log("Tallennetut tiedot:", entries);
 
+// Funktio näyttää yhden tallennetun merkinnän listassa
 function showEntry(entry) {
+    // Muutetaan minuutit tunneiksi ja minuuteiksi
     const shownHours = Math.floor(entry.minutes / 60);
     const shownMin = entry.minutes % 60;
+    //Muodostetaan näytettävä aikateksti
     let timeText = "";
     if (shownHours > 0) {
         timeText = shownHours + "h ";
     }
     timeText = timeText + shownMin + "min";
+    // Luodaan uusi listan elementti 
     const item = document.createElement("li");
     item.textContent = entry.category + " " + timeText + " ";
+    // Luodaan poistopainike
     const deleteButton = document.createElement("button");
     deleteButton.classList.add("deleteButton");
     deleteButton.textContent = "Poista";
+    // Kun käyttäjä painaa Poista, poistetaan merkintä
     deleteButton.addEventListener("click", function() {
+        // Poistetaan valittu merkintä taulukosta
         entries = entries.filter(function(savedEntry){
             return savedEntry !== entry;
         });
+        // Päivitetään localStorage
         localStorage.setItem ("timeEntries", JSON.stringify(entries));
+        // Poistetaan merkintä näkyvästä listasta
         item.remove();
     });
+     // Lisätään poistopainike listan elementtiin
     item.append(deleteButton);
     resultList.append(item);
 }

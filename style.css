@@ -168,3 +168,45 @@ input[type="radio"] + label {
     font-weight: bold;
     color:  rgb(107, 87, 0);
 }
+
+
+.bar {
+    background-color:hsl(0, 0%, 86%);
+    width: 90%;
+    height: 15px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+#bar {
+    width: 450px;
+    max-width: 90%;
+    margin: 20px auto;
+}
+#bar p {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 5%;
+}
+.bar div {
+    height: 100%;
+    border-radius: 10px;
+}
+#workBar {
+    background-color: #39caff;
+}
+
+#studyBar {
+    background-color: #8bdc65;
+}
+
+#sportBar {
+    background-color: #ffcf54;
+}
+
+#hobbyBar {
+    background-color: #f4a1c4;
+}
+
+#otherBar {
+    background-color: #a99cf4;
+}

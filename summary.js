@@ -67,3 +67,32 @@ const otherHours = Math.floor(otherMin / 60);
 const otherRemMin = otherMin % 60;
 const otherTime = document.querySelector("#otherTime");
 otherTime.textContent = otherHours + " h " + otherRemMin + " min";
+
+
+let workPercent=0;
+let studyPercent=0;
+let sportPercent=0;
+let hobbyPercent=0;
+let otherPercent=0;
+   if (totalMin >0) {
+      workPercent = Math.floor ( workMin/totalMin *100);
+      studyPercent = Math.floor ( studyMin/totalMin *100);
+      sportPercent = Math.floor(sportMin / totalMin * 100);
+      hobbyPercent = Math.floor(hobbyMin / totalMin * 100);
+      otherPercent = Math.floor(otherMin / totalMin * 100);
+      }
+// Työ
+document.querySelector("#workPercent").textContent = workPercent + "%";
+document.querySelector("#workBar").style.width = workPercent + "%";
+// Opiskelu
+document.querySelector("#studyPercent").textContent = studyPercent + "%";
+document.querySelector("#studyBar").style.width = studyPercent + "%";
+// Urheilu
+document.querySelector("#sportPercent").textContent = sportPercent + "%";
+document.querySelector("#sportBar").style.width = sportPercent + "%";
+// Hobby
+document.querySelector("#hobbyPercent").textContent = hobbyPercent + "%";
+document.querySelector("#hobbyBar").style.width = hobbyPercent + "%";
+// Muu
+document.querySelector("#otherPercent").textContent = otherPercent + "%";
+document.querySelector("#otherBar").style.width = otherPercent + "%";
