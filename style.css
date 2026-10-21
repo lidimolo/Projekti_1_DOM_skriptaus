@@ -1,9 +1,63 @@
 body {
     font-family: Trebuchet MS;
+        text-align: center;
 }
 .hidden {
     display: none;
 }
 .input-error {
     border: 2px solid red;
+}
+h1 {
+    background-color: #39caff;
+    padding: 20px;
+    border-radius: 12px;
+    color: rgb(7, 47, 112);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(7, 47, 112);
+    background-color: #eef8ff;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background-color: #d5f2ff;
+    border-color: #39caff;
+    color: rgb(7, 47, 112);
+}
+
+nav a.active {
+    background-color: #39caff;
+    border-color: #39caff;
+    color: rgb(7, 47, 112);
+}
+nav a.active_y {
+    background-color: #39caff;
+    border-color: #39caff;
+    color: rgb(7, 47, 112);
+}
+input {
+    border-radius: 20px;
+    padding: 8px;
+    border: 2px solid #b8e8ff;
+    font-size: 16px;
+    background-color: #eef8ff;
+    outline: none;
+}
+input:focus {
+    outline: 1px solid #39caff;
+    outline-offset: 2px;
+
 }
