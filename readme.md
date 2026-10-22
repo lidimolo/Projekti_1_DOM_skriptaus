@@ -1,20 +1,24 @@
 # Projektin nimi
 
-**Tekijä(t):** Kirjoita tähän oma nimesi / tekijöiden nimet
+**Tekijä(t):** Lidiia Molodtsova
 
 ## Projektisuunnitelma
 
 ### Projektin idea
 
-Kuvaile lyhyesti, mitä sovelluksesi tekee ja kenelle se on tarkoitettu.
+TimeChecker on ajanseurantasovellus. Tämän sovelluksen avulla käyttäjä voi seurata, miten hän käyttää aikaansa. Käyttäjä voi lisätä aikaa eri kategorioihin. Sovellus näyttää kokonaisajan sekä ajan jokaisessa kategoriassa. Se näyttää myös ajankäytön prosentteina.
+
+Sovellus on tarkoitettu kaikille, jotka haluavat seurata ja suunnitella omaa ajankäyttöään.
 
 ### Suunnitellut toiminnot
 
 Listaa vähintään kolme sovellukseesi suunniteltua toimintoa:
 
-- Toiminto 1
-- Toiminto 2
-- Toiminto 3
+- Ajan lisäminen
+- Kategorian valinta
+- Merkinnän poistaminen
+- Kokonaisajan laskeminen
+- Ajankäytön laskeminen prosentteina
 
 ### Rautalankamalli / luonnos
 
@@ -26,33 +30,32 @@ Esimerkki kuvan lisäämisestä:
 
 ## Verkkolinkit
 
-- **Julkaistu sovellus:** [Lisää tähän GitHub Pages -osoite](https://yourusername.github.io/your-repository/)
-- **GitHub-repositorio:** [Lisää tähän repositorion osoite](https://github.com/yourusername/your-repository)
-- **Projektin videoesittely:** [Lisää tähän videon osoite](https://example.com/)
+- **Julkaistu sovellus:** [https://lidimolo.github.io/Projekti_1_DOM_skriptaus/index.html](https://lidimolo.github.io/Projekti_1_DOM_skriptaus/index.html)
+- **GitHub-repositorio:** [[Lisää tähän repositorion osoite](https://github.com/lidimolo/Projekti_1_DOM_skriptaus)](https://github.com/lidimolo/Projekti_1_DOM_skriptaus)
+- **Projektin videoesittely:** [https://laureauas-my.sharepoint.com/:v:/g/personal/lim00039_laurea_fi/IQC8kMetsvY7QovUlL8J_K4OAf-ego5UHlFwTNLQDWfvX5k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mSqTVK](https://laureauas-my.sharepoint.com/:v:/g/personal/lim00039_laurea_fi/IQC8kMetsvY7QovUlL8J_K4OAf-ego5UHlFwTNLQDWfvX5k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mSqTVK)
 
 ## Tietoja sovelluksesta
 
-**[Projektin nimi]** on verkkosovellus, joka ...
-
-Kuvaile lyhyesti sovelluksen tarkoitus ja tärkeimmät toiminnot.
+**[TimeChecker]** on ajanseurantasovellus, jonka avulla käyttäjä voi seurata omaa ajankäyttöään. Käyttäjä voi lisätä ja poistaa merkintöjä sekä valita kategorian. Sovellus laskee kokonaisajan ja näyttää ajankäytön kategorioittain ja prosentteina.
 
 ## Teknologiat
 
-Kuvaile, mitä teknologioita käytit ja mikä niiden rooli oli projektissasi.
+Käytin projektissa seuraavia teknologioita:
 
 - HTML – sivun rakenne
 - CSS – ulkoasu ja asettelu
 - JavaScript – toiminnallisuus, DOM-skriptaus ja lomakkeiden validointi
-- localStorage – tietojen tallentaminen selaimeen, jos käytit sitä
+- localStorage – tietojen tallentaminen selaimeen
 
 ## Sovelluksen käyttö
 
-Kirjoita lyhyet käyttöohjeet sovellukselle.
-
-1. Avaa julkaistu sovellus yllä olevasta linkistä.
-2. Täytä lomakkeen kentät.
-3. Lisää, muokkaa, poista tai merkitse kohteita tehdyiksi.
-4. Päivitä sivu ja tarkista, säilyvätkö tiedot selaimessa, jos käytit localStoragea.
+1. Avaa sovellus yllä olevasta linkistä.
+2. Syötä tunnit ja minuutit lomakkeeseen.
+3. Paina vihreää plus-painiketta ja valitse kategoria.
+4. Paina Tallenna, niin merkintä lisätään listaan.
+5. Voit poistaa merkinnän Poista-painikkeella.
+6. Siirry Yhteenveto-sivulle nähdäksesi kokonaisajan ja ajankäytön prosentteina.
+7. Tiedot tallentuvat selaimen localStorageen ja säilyvät sivun päivittämisen jälkeen.
 
 ## Sovelluksen käynnistäminen paikallisesti
 
@@ -66,17 +69,16 @@ Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksestasi.
 
 Esimerkki kuvan lisäämisestä:
 
-![Kuvakaappaus sovelluksesta](img/screenshot.png)
+![img/Screenshot_1.png](img/Screenshot_1.png)
+[img/Screenshot_2.png](img/Screenshot_2.png)
 
 ## Tunnetut virheet / puutteet
 
-Kerro, jos sovelluksessa on tunnettuja virheitä, puuttuvia toimintoja tai muita rajoituksia.
-
-Jos tunnettuja virheitä ei ole, kirjoita: **Ei tunnettuja virheitä.**
+Ei tunnettuja virheitä.
 
 ## Työn jakautuminen
 
-*Täytä tämä osio vain, jos teit projektin parityönä.*
+_Täytä tämä osio vain, jos teit projektin parityönä._
 
 Kuvaile, miten työ jakautui ja miten yhteistyö sujui.
 
@@ -88,11 +90,17 @@ Kuvaile, miten työ jakautui ja miten yhteistyö sujui.
 Pohdi työtäsi ja oppimisprosessiasi.
 
 - Missä onnistuin?
+  Onnistuin JavaScriptin käytössä ja osasin yhdistää HTML, CSS ja JavaScriptin. Käytin erilaisia JavaScriptin toimintoja, ja nyt ymmärrän niitä paremmin.
 - Mikä oli haastavaa?
+  Haastavinta oli JavaScriptin uusien toimintojen ymmärtäminen ja localStoragen käyttäminen.
 - Mitä parantaisin, jos aikaa olisi enemmän?
+  Jos minulla olisi enemmän aikaa, lisäisin kalenterin ja ajankäytön tilastot eri päiville, viikoille, kuukausille ja vuosille. Tekisin myös mahdollisuuden, että käyttäjä voisi luoda omia kategorioita.
 - Mitä opin HTML:stä, CSS:stä, JavaScriptistä ja DOM-skriptauksesta?
+  HTMLä opin käyttämään ID-tunnisteita. CSSä opin käyttämään erilaisia luokkia ja yhdistämään niitä JavaScriptiin.
+  JavaScriptistä opin paljon uusia toimintoja, esimerkiksi addEventListener(), createElement(), forEach() ja Math.floor(). Opin myös luomaan omia funktioita, kuten showEntry(), ja muuttamaan HTML-elementtejä DOM-skriptauksen avulla.
 - Mikä jäi epäselväksi tai mistä haluaisin oppia lisää?
-- Oma arvio projektista: **xx/10 pistettä**
+  Haluan oppia lisää JavaScriptin toiminnoista ja localStoragen käytöstä.
+- Oma arvio projektista: **7/10 pistettä**
 
 ## Lähteet ja kiitokset
 
@@ -100,10 +108,11 @@ Listaa kaikki projektissa käyttämäsi lähteet, tutoriaalit, kuvat ja koodiesi
 
 Jos käytit ChatGPT:tä, GitHub Copilotia tai muuta tekoälytyökalua, mainitse se tässä ja kerro lyhyesti, miten se tuki työskentelyäsi.
 
-- [Lähteen tai tutoriaalin nimi](https://example.com/)
-- [Kuvalähde](https://example.com/)
-- Käytetty tekoälytyökalu: ...
-  - Miten työkalua käytettiin: ...
+- [https://www.w3schools.com/html/](hhttps://www.w3schools.com/html/)
+- [https://www.flaticon.com/free-icons/freepik](https://www.flaticon.com/free-icons/freepik)
+- Käytetty tekoälytyökalu: ClaudeClode, ChatGPT
+  Käytin tekoälyä localStoragen toteuttamiseen, ajankäytön prosenttien laskemiseen ja näyttämiseen sekä koodin virheiden korjaamiseen.
+  - Miten työkalua käytettiin: VisualStudioCode
 
   ## Lisenssi
 
