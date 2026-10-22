@@ -26,12 +26,12 @@ Lisää tähän kuva käsin piirtämästäsi tai digitaalisesti tehdystä sovell
 
 Esimerkki kuvan lisäämisestä:
 
-![Rautalankamalli](img/wireframe.png)
+![Rautalankamalli](img/wireframes.png)
 
 ## Verkkolinkit
 
 - **Julkaistu sovellus:** [https://lidimolo.github.io/Projekti_1_DOM_skriptaus/index.html](https://lidimolo.github.io/Projekti_1_DOM_skriptaus/index.html)
-- **GitHub-repositorio:** [[Lisää tähän repositorion osoite](https://github.com/lidimolo/Projekti_1_DOM_skriptaus)](https://github.com/lidimolo/Projekti_1_DOM_skriptaus)
+- **GitHub-repositorio:** [[https://github.com/lidimolo/Projekti_1_DOM_skriptaus)](https://github.com/lidimolo/Projekti_1_DOM_skriptaus)](https://github.com/lidimolo/Projekti_1_DOM_skriptaus)
 - **Projektin videoesittely:** [https://laureauas-my.sharepoint.com/:v:/g/personal/lim00039_laurea_fi/IQC8kMetsvY7QovUlL8J_K4OAf-ego5UHlFwTNLQDWfvX5k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mSqTVK](https://laureauas-my.sharepoint.com/:v:/g/personal/lim00039_laurea_fi/IQC8kMetsvY7QovUlL8J_K4OAf-ego5UHlFwTNLQDWfvX5k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mSqTVK)
 
 ## Tietoja sovelluksesta
