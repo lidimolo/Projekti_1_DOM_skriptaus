@@ -1,4 +1,4 @@
-# Projektin nimi
+# TimeChecker
 
 **Tekijä(t):** Lidiia Molodtsova
 
