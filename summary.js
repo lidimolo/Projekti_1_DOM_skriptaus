@@ -1,24 +1,29 @@
+//Haetaan tallennetut merkinnät localStoragesta
 let entries = JSON.parse(localStorage.getItem("timeEntries")) || [];
 console.log(entries);
+//Asetetaan kokonaisajan alkuarvoksi nolla
 let totalMin = 0;
 
+//Lasketaan kaikkien merkintöjen minuutit yhteen
 entries.forEach (function(entry) {
     totalMin = totalMin + entry.minutes;
 })
 console.log(totalMin);
-
+//Muutetaan kokonaisaika minuuteiksi
 const totalHours = Math.floor (totalMin / 60);
 const remainingMin = totalMin % 60;
-
+//Näytetään kokonaisaika HTML-lla
 const totalTime = document.querySelector ("#totalTime")
 totalTime.textContent = totalHours + "h" + " " + remainingMin + " " + "min";
 
+//Asetetaan kategorioiden alkuarvoksi nolla
 let workMin = 0;
 let studyMin = 0;
 let sportMin = 0;
 let hobbyMin = 0;
 let otherMin = 0;
 
+//Lasketaan aika erikseen jokaiselle kategorialle
 entries.forEach (function(entry){
     if (entry.category === "Työ") {
        workMin = entry.minutes + workMin;
@@ -40,10 +45,10 @@ entries.forEach (function(entry){
 console.log (workMin);
 console.log (studyMin);
 
-// Työ
-
+// Työ. Muutetaan minuutit tunneiksi ja minuuteiksi
 const workHours = Math.floor (workMin / 60);
 const workRemMin = workMin % 60;
+//Näytetään työaika HTML-sivulla
 const workTime = document.querySelector ("#workTime")
 workTime.textContent = workHours + " " + "h" + " " + workRemMin + " " + "min";
 // Opiskelu
@@ -68,12 +73,14 @@ const otherRemMin = otherMin % 60;
 const otherTime = document.querySelector("#otherTime");
 otherTime.textContent = otherHours + " h " + otherRemMin + " min";
 
+// Asetetaan prosenttien alkuarvoiksi nolla
 
 let workPercent=0;
 let studyPercent=0;
 let sportPercent=0;
 let hobbyPercent=0;
 let otherPercent=0;
+// Lasketaan kategorioiden prosenttiosuudet kokonaisajasta
    if (totalMin >0) {
       workPercent = Math.floor ( workMin/totalMin *100);
       studyPercent = Math.floor ( studyMin/totalMin *100);
@@ -81,6 +88,8 @@ let otherPercent=0;
       hobbyPercent = Math.floor(hobbyMin / totalMin * 100);
       otherPercent = Math.floor(otherMin / totalMin * 100);
       }
+      
+// Näytetään prosentit ja muutetaan palkkien leveyttä
 // Työ
 document.querySelector("#workPercent").textContent = workPercent + "%";
 document.querySelector("#workBar").style.width = workPercent + "%";
